@@ -43,3 +43,12 @@ function displayBooks() {
 }
 
 displayBooks()
+
+// Chercher un livre à partir de son titre
+function searchByTitle(title){
+    for(i=0; i < books.length; i++){
+        if(books[i].title == title){
+            console.log(books[i])
+        }
+    }
+}
