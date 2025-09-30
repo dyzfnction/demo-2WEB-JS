@@ -50,5 +50,10 @@ function searchByTitle(title){
         if(books[i].title == title){
             console.log(books[i])
         }
+        else(
+            console.log("Ce livre n'est pas dans la liste.")
+        )
     }
 }
+
+searchByTitle("Les Fleurs du Mal")
