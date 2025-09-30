@@ -68,3 +68,5 @@ function borrowedBook(book){
         console.log("Ce livre a déjà été emprunté")
     }
 }
+
+borrowedBook("L'étranger")
