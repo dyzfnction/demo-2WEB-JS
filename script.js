@@ -56,4 +56,15 @@ function searchByTitle(title){
     }
 }
 
+searchByTitle('Le petit Prince')
 searchByTitle('Les Fleurs du Mal')
+
+
+function borrowedBook(book){
+    if(books.searchByTitle(book).borrowed != true){
+        books[book].borrowed = true
+    }
+    else {
+        console.log("Ce livre a déjà été emprunté")
+    }
+}
