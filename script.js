@@ -56,4 +56,4 @@ function searchByTitle(title){
     }
 }
 
-searchByTitle("Les Fleurs du Mal")
+searchByTitle('Les Fleurs du Mal')
