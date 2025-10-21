@@ -71,5 +71,5 @@ function borrowedBook(title){
     }
 }
 
-borrowedBook(Gachiakuta)
+borrowedBook('Gachiakuta')
 displayBooks()
