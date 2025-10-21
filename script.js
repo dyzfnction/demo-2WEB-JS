@@ -69,4 +69,5 @@ function borrowedBook(book){
     }
 }
 
-borrowedBook('L\'étranger')
+borrowedBook("L\'étranger")
+displayBooks()
