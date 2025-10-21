@@ -82,7 +82,7 @@ displayBooks()
 
 function returnBook(title){
     let book = searchByTitle(title)
-    if(books[book].borrowed == true){
+    if(book.borrowed == true){
         book.borrowed = false
         console.log("Livre rendu")
     }
