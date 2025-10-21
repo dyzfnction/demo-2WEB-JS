@@ -63,7 +63,6 @@ searchByTitle('Les Fleurs du Mal')
 
 function borrowedBook(title){
     let book = searchByTitle(title) // Création d'un objet livre
-    console.log(book) // Affiche le livre juste histoire d'etre sure parce que omg
     if(book.borrowed == false){
         console.log("Ce livre n'a pas été emprunté") // Affiche dans la console 
         book.borrowed = true // Change borrowd à vrai
@@ -83,5 +82,8 @@ function returnBook(title){
     let book = searchByTitle(title)
     if(books[book].borrowedBook == true){
         book.borrowed = false
+        console.log("Livre rendu")
     }
 }
+
+returnBook("Gachiakuta")
