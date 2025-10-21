@@ -61,7 +61,7 @@ searchByTitle('Les Fleurs du Mal')
 
 
 function borrowedBook(book){
-    if(books[book].searchByTitle(book).borrowed != true){
+    if(books[book].searchByTitle(books[book].title).borrowed != true){
         books[book].borrowed = true
     }
     else {
