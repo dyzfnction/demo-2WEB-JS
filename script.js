@@ -61,8 +61,9 @@ searchByTitle('Les Fleurs du Mal')
 
 
 function borrowedBook(title){
-    if(books[book].searchByTitle(title).borrowed != true){
-        books[book].borrowed = true
+    let book = searchByTitle(title);
+    if(books[book].borrowed != true){
+        book.borrowed = true
     }
     else {
         console.log("Ce livre a déjà été emprunté")
