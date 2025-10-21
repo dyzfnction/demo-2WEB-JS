@@ -64,12 +64,12 @@ function borrowedBook(title){
     let book = searchByTitle(title);
     if(books[book].borrowed == false){
         console.log("Ce livre n'a pas été emprunté")
-        
+        book.borrowed = true
     }
     else {
         console.log("Ce livre a déjà été emprunté")
     }
 }
 
-borrowedBook('Gachiakuta')
+borrowedBook("Gachiakuta")
 displayBooks()
