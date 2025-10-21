@@ -49,6 +49,7 @@ function searchByTitle(title){
     for(i=0; i < books.length; i++){
         if(books[i].title == title){
             console.log(books[i])
+            return books[i]
         }
         else(
             console.log("Ce livre n'est pas dans la liste.")
