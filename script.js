@@ -72,7 +72,6 @@ function borrowedBook(title){
     else {
         console.log("Ce livre a déjà été emprunté") // Too late
     }
-    return book.title // Retourne le livre
 }
 
 
@@ -83,7 +82,7 @@ displayBooks()
 
 function returnBook(title){
     let book = searchByTitle(title)
-    if(books[book].borrowedBook == true){
+    if(books[book].borrowed == true){
         book.borrowed = false
         console.log("Livre rendu")
     }
