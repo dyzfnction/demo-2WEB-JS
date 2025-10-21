@@ -109,4 +109,5 @@ function searchByPublicationYear(year){
     return hum // Retourne le livre
 }
 
+displayBooks()
 searchByPublicationYear("1857")
