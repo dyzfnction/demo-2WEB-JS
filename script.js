@@ -62,7 +62,7 @@ function searchByTitle(title){
 searchByTitle('Le petit Prince')
 searchByTitle('Les Fleurs du Mal')
 
-
+//Emprunter le livre
 function borrowedBook(title){
     let book = searchByTitle(title) // Création d'un objet livre
     if(book.borrowed == false){
@@ -79,13 +79,34 @@ borrowedBook("Gachiakuta")
 borrowedBook("L'étranger")
 displayBooks()
 
-
+// Rendre le livre
 function returnBook(title){
     let book = searchByTitle(title)
-    if(book.borrowed == true){
-        book.borrowed = false
-        console.log("Livre rendu")
+    if(book.borrowed == true){ // Si borrowed est a vrai (donc il a été emprunté) on peut le rendre
+        book.borrowed = false // Borrowed est mis à false donc il est a nouveau disponible
+        console.log("Livre rendu") // Affichage console
+    }
+    else{
+        console.log("Ce livre n'a jamais été emprunté") // Affichage console
     }
 }
 
 returnBook("Gachiakuta")
+
+
+// Recherche de livre par années
+function searchByPublicationYear(year){
+    let hum // Déclaration de "hum"
+    for(i=0; i < books.length; i++){ // Parcours du tableau
+        if(books[i].publicationYear == year){
+            console.log(books[i])
+            hum = books[i]
+        }
+        else(
+            console.log("Ce livre n'est pas dans la liste.")
+        )
+    }
+    return hum // Retourne le livre
+}
+
+searchByPublicationYear("1857")
