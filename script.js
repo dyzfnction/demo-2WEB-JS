@@ -60,8 +60,8 @@ searchByTitle('Le petit Prince')
 searchByTitle('Les Fleurs du Mal')
 
 
-function borrowedBook(book){
-    if(books[book].searchByTitle(books).borrowed != true){
+function borrowedBook(title){
+    if(books[book].searchByTitle(title).borrowed != true){
         books[book].borrowed = true
     }
     else {
@@ -69,5 +69,5 @@ function borrowedBook(book){
     }
 }
 
-borrowedBook("Gachiakuta")
+borrowedBook('Gachiakuta4)
 displayBooks()
