@@ -102,9 +102,9 @@ function searchByPublicationYear(year){
             console.log(books[i])
             hum = books[i]
         }
-        else(
+        else{
             console.log("Ce livre n'est pas dans la liste.")
-        )
+        }
     }
     return hum // Retourne le livre
 }
