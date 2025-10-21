@@ -72,7 +72,7 @@ function borrowedBook(title){
     else {
         console.log("Ce livre a déjà été emprunté") // Too late
     }
-    return book // Retourne le livre
+    return book.title // Retourne le livre
 }
 
 
