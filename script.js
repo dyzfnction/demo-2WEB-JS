@@ -46,8 +46,8 @@ displayBooks()
 
 // Chercher un livre à partir de son titre
 function searchByTitle(title){
+    let euh // Pour récupérer le livre
     for(i=0; i < books.length; i++){
-        let euh
         if(books[i].title == title){
             console.log(books[i])
             euh = books[i]
@@ -56,7 +56,7 @@ function searchByTitle(title){
             console.log("Ce livre n'est pas dans la liste.")
         )
     }
-    return euh
+    return euh // Retourne le livre
 }
 
 searchByTitle('Le petit Prince')
@@ -72,7 +72,7 @@ function borrowedBook(title){
     else {
         console.log("Ce livre a déjà été emprunté") // Too late
     }
-    return book
+    return book // Retourne le livre
 }
 
 
