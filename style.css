@@ -1,13 +1,13 @@
 /* Conteneur principal centré */
 .ecran {
-    width:1920px;
-    height:1080px;
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%, -50%);
-    display:flex;
-    align-items:center;
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    left: 500%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
     justify-content:center;
     box-shadow: 0 10px 30px rgba(2,6,23,0.15);
     background: #ffffff;
@@ -20,6 +20,7 @@
 /* Tableau de livres */
 .tableau-livres {
     border-collapse: collapse;
+    border-radius: ;
     width: 80%;
     max-width: 1600px;
     min-width: 700px;
@@ -31,7 +32,7 @@
 .entete-livres th {
     text-align: left;
     padding: 12px 16px;
-    background: linear-gradient(90deg, #0ea5a4, #06b6d4);
+    background: linear-gradient(90deg, #000000);
     color: white;
     font-weight: 600;
     letter-spacing: 0.02em;
